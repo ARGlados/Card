@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+</head>
+<style>
+    body {
+    background-color: #19181D;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 90vw;
+    top: 15%;
+    margin-left: 5%;
+    display: flex;
+    margin-right: 5%;
+}
+
+.card {
+    display: flex;
+    height: 55%;
+    max-width: 300px;
+    background-color: #19181D;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -40px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+    
+}
+
+.title {
+    color: white;
+    font-weight: 600;
+    position: relative;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.bar {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+    width: 80%;
+    transition: 0.4s ease-out;
+}
+
+.circle {
+    position: absolute;
+    top: 150px;
+    left: calc(50% - 60px);
+}
+
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+
+svg {
+    fill: #17141d;
+    stroke-width: 2px;
+}
+
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+.list {
+    font-size: 16px;
+    line-height: 1.55;
+    top:5%;
+    left:5%;
+    color:white;
+    width: 100%;
+    height: 100%;
+    margin-left: -25px;
+}
+
+.titlebox {
+    padding: 30px 20px 40px;
+}
+
+</style>
+<body>  
+<div class="container">
+    <div class="card">
+    <div class ="titlebox">
+        <div style="margin-bottom: 10px;">
+        <h3 class="title">Расширение зоны присутствия</h3>
+        <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+        </div>
+    <div class="list">
+        <ul>
+            <li>Экспансия торговых сетей вне территориальных ограничений.</li>
+            <li>Диверсификация дохода через онлайн-ритейл.</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="card">
+        <div class ="titlebox">
+        <h3 class="title">Перехват основного трафика покупателей</h3>
+        <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+        <div class="list">
+            <ul>
+            <li>Преимущество в борьбе за внимание клиента</li>
+            <li>Закрепление покупательского намерения</li>
+            <li>VR-примерка украшений в кармане</li>
+            </ul>  
+            </div>
+            </div>
+    </div>
+    <div class="card">
+        <div class ="titlebox">
+    <h3 class="title">Повышение эффективности цифровой платформы</h3>
+    <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+    <div class="list">
+        <ul>
+            <li>Продвижение сайта на первые позиции в результатах выдачи поисковых систем</li>
+            <li>Совместимость со всеми web-платформами</li>
+            <li>Снятие ограничений для перехода офлайн дистрибуции изделий в онлайн.</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="card">
+    <div class ="titlebox">
+    <h3 class="title">Снижение трансакционных издержек</h3>
+    <div class="bar">
+        <div class="emptybar"></div>
+        <div class="filledbar"></div>
+      </div>
+    <div class="list">
+        <ul>
+            <li>Сокращение количества возвратов</li>
+            <li>Снижение нагрузки на реальные розничные точки продаж.Сокращение затрат на:
+                <ul type="circle">
+                <li>Аренду торгового помещения</li>
+                <li>Поиск и обучение персонала </li>
+                <li>Логистику</li>
+                <li>Оборудование ювелирного магазина</li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    </div>   
+    </div>
+    <div class="card">
+        <div class ="titlebox">
+        <h3 class="title">Создание привлекательной идентичности бренда</h3>
+        <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+        <div class="list">
+        <ul>
+            <li>Оборудование ювелирного магазина</li>
+            <li>Поддержание вовлеченности аудитории</li>
+            <li>IT-решения для повышения виральности бренда</li>
+        </ul>
+        </div> 
+        </div>  
+    </div>
+    <div class="card">
+        <div class ="titlebox">
+            <h3 class="title">Увеличение объема продаж</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+            <div class="list">
+                <ul>
+                    <li>Стимуляция повторных покупок</li>
+                    <li>Увеличение LTV</li>
+                    <li>Меры по снижению потерь из-за невозможности параллельных показов</li>
+                    <li>Снижение нерешительности клиента при покупке онлайн</li>
+                </ul>    
+            </div>   
+            </div>
+    </div>
+</div>
+</body>
+</html>
